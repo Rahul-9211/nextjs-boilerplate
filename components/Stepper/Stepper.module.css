@@ -1,0 +1,54 @@
+.stepper {
+    /* position: relative; */
+    /* margin: 20px 0; */
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .stepMarker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    /* border-radius: 50%;
+    border: 2px solid #a3acd1; */
+    background-color: white;
+    z-index: 1;
+  }
+  
+  .completed {
+    background-color: #00041a;
+    border-color: #3f51b5;
+  }
+  
+  .connector {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 2px;
+    height: 97px; /* Increase the height to connect circles properly */
+    background-color: #a3acd1;
+    z-index: 0;
+  }
+  
+  .openConnector {
+    background-color: #a3acd1;
+  }
+  .InprogressConnector {
+    background-color: #3f51b5;
+  }
+   .completedConnector {
+    background-color: #23a966;
+  }
+  
+  .stepLabel {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
